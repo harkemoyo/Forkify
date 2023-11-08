@@ -1,0 +1,21 @@
+{
+  "name": "forkify-app",
+  "version": "1.0.0",
+  "description": "",
+  "default": "main.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist "
+  },
+  "author": "Hark",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.1",
+    "parcel": "^2.10.1"
+  },
+  "dependencies": {
+    "core-js": "^3.33.2",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.14.0"
+  }
+}
