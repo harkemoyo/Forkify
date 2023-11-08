@@ -301,7 +301,7 @@ return this._data.map(e=>rI.render(e,!1)).join("")}}var rC=new rq;class rA exten
         <use href="${/*@__PURE__*/_(rL)}#icon-arrow-right"></use>
       </svg>
     </button>`:"")}}var rD=new rA;// import icons from '../img/icons.svg'
-class rN extends rM{_parentElement=document.querySelector(".bookmarks__list");_errorMessage="   No bookmarks yet. Find a nice recipe and bookmark it :)";_message="";addHandlerRender(e){window.addEventListener("load",e)}_generateMarkUp(){// console.log(this._data);
+class rN extends rM{_parentElement=document.querySelector(".bookmarks__list");_errorMessage="No bookmarks yet. Find a nice recipe and bookmark it :)";_message="";addHandlerRender(e){window.addEventListener("load",e)}_generateMarkUp(){// console.log(this._data);
 // Render as a String // by default in the render
 // We can't use the preview view itself because we need to render the data property that we parse in
 return this._data.map(e=>rI.render(e,!1)).join("")}}var rR=new rN;class rU extends rM{_parentElement=document.querySelector(".upload");_message="Add Recipe was successfully Uploaded :)";_window=document.querySelector(".add-recipe-window");_overlay=document.querySelector(".overlay");_btnClose=document.querySelector(".btn--close-modal");_btnOpen=document.querySelector(".nav__btn--add-recipe");constructor(){super(),this._addHandlerShowWindow(),this._addHandlerHideWindow()}// Toggle function for  window
@@ -425,6 +425,6 @@ window.history.pushState(null,"",`#${rb.recipe.id}`),// SetTimeout for the added
 setTimeout(()=>rz.toggleWindow(),2500)}catch(e){console.error("❤️‍\uD83D\uDD25",e),rz.erroHandlerRender(e.message)}};rx.addHandlerRender(function(){rR.render(rb.bookmarks)}),rx.addHandlerRender(rG),rx.addHandlerUpdateIng(function(e){// update the recipe servings
 rE(e),rx.update(rb.recipe)}),rx.addHandlerAddBookmark(function(){rb.recipe.bookmarked?rO(rb.recipe.id):rj(rb.recipe),rx.update(rb.recipe),rR.render(rb.bookmarks)}),rH.addHandlerSearch(rB),rD._addHandlerClick(function(e){rC.render(rS(e)),rD.render(rb.search)}),rz._addHandlerUploadFile(rJ);// window.addEventListener('hashchange',recipeRequest)
 // window.addEventListener('load',recipeRequest)
-//# sourceMappingURL=index.dfe87c00.js.map
+//# sourceMappingURL=index.1a08dfb8.js.map
 
-//# sourceMappingURL=index.dfe87c00.js.map
+//# sourceMappingURL=index.1a08dfb8.js.map
