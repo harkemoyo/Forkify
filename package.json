@@ -2,15 +2,16 @@
   "name": "forkify-app",
   "version": "1.0.0",
   "description": "",
-  "default": "main.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build main.js"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Hark",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.1",
+    "netlify-cli": "^17.2.0",
     "parcel": "^2.10.1"
   },
   "dependencies": {
