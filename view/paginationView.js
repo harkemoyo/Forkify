@@ -9,9 +9,9 @@ class paginationView extends Views {
         const btn = e.target.closest(".btn--inline");
 
         if (!btn) return
-        console.log(btn);
+ 
         const goToPage = +btn.dataset.goto
-        console.log(goToPage);
+       
         handler(goToPage)
      
       })  

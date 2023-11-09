@@ -40,6 +40,8 @@ const recipeRequest = async function () {
 
     //  render the recipe
     recipeView.render(model.state.recipe);
+
+    
   } catch (err) {
     recipeView.erroHandlerRender();
   }
@@ -55,6 +57,9 @@ const controlleResults = async function () {
 
     // Load search results
     await model.loadSearchResults(query);
+  
+     // Render success message of RecipeView
+     recipeView.HandlerMessageRender()
 
     // Render the results
     // resultView.render(model.state.search.result)
@@ -64,6 +69,7 @@ const controlleResults = async function () {
     paginationView.render(model.state.search);
     // console.log(model.state.recipe);
   } catch (err) {
+     
     console.error(`${err}`);
   }
 };

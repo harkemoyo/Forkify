@@ -35,7 +35,7 @@ export default class Views{
         const curEl = curElement[i];
         // console.log(curEl, newEl.isEqualNode(curEl) );
         if(!curEl.isEqualNode(newEl) && newEl.firstChild?.nodeValue.trim() !== '') {
-          console.log("🥏",newEl.firstChild?.nodeValue.trim());
+         
           curEl.textContent = newEl.textContent
           
         }
